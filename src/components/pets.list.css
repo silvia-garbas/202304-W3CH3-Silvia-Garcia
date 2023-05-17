@@ -1,5 +1,6 @@
 span {
-  padding: 3rem;
+  padding: 20px;
+  height: 50px;
 }
 
 ul {
@@ -8,4 +9,9 @@ ul {
 
 .button {
   cursor: pointer;
+}
+.ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

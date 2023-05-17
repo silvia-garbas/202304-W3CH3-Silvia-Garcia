@@ -1,19 +1,22 @@
-import "./main.css";
-import { Component } from "./component";
+import './main.css';
+import { Component } from './component';
 
 export class Main extends Component {
   constructor(selector: string) {
     super(selector);
     this.template = this.createTemplate();
     this.render();
-    console.log(this.element);
   }
 
   createTemplate() {
     return `
     <main>
-      <h2>Página de inicio</h2>
+       <div class="title_main">
+      <h2>Lista de mascotas</h2>
+      </div>
+      
+     
     </main>
     `;
   }
-} 
+}
