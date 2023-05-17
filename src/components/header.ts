@@ -6,7 +6,6 @@ export class Header extends Component {
     super(selector);
     this.template = this.createTemplate();
     this.render();
-    console.log(this.element);
   }
 
   createTemplate() {

@@ -14,6 +14,8 @@ export abstract class Component {
   }
 
   cleanHtml(selector: string) {
-    this.element = document.querySelector(selector) as Element;
+    this.element = document.querySelector(selector) as HTMLElement;
+    this.element.innerHTML = '';
+    return this.element;
   }
 }

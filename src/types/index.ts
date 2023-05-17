@@ -3,7 +3,7 @@ import { Header } from '../components/header';
 import { Main } from '../components/main';
 import { PetsList } from '../components/pets.list';
 
-new Header('#app', 'Lista de mascotas');
+new Header('#app', 'No compres adopta');
 new Main('#app');
 new PetsList('main');
-new Footer('#app', 'Made with much much love from Lanza ');
+new Footer('#app', 'Ya nos queda menos ');

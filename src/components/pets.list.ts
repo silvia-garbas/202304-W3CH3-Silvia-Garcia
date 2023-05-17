@@ -39,19 +39,21 @@ export class PetsList extends Component {
       .map(
         (item) => `
           <li>
+           <img src="/images/${item.name}.jpg" alt="Pet" />
             <label for="adopt">Adoptado</label>
             <input id="adopt" type="checkbox" ${
               item.isAdopted ? 'checked' : ''
             }>
-            <span>ID: ${item.id}</span>
+            <div>
+            <span>ID: ${item.id}<span>
             <span>Nombre:: ${item.name}</span>
             <span>Raza: ${item.breed}</span>
             <span>Dueño: ${item.owner}</span>
-            <i class="button" role="button" data-id=${item.id}>❌</i>
+            <i class="button" role="button" data-id=${item.id}>X</i>
           </li>`
       )
       .join('');
 
-    return `<ul>${list}</ul>`;
+    return `<ul class="ul">${list}</ul>`;
   }
 }
